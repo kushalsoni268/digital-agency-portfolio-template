@@ -1,0 +1,98 @@
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Media query mixins
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "xs" {
+    @media (max-width: 575.98px) { @content; }
+  } @else if $breakpoint == "sm" {
+    @media (min-width: 576px) and (max-width: 767.98px) { @content; }
+  } @else if $breakpoint == "md" {
+    @media (min-width: 768px) and (max-width: 991.98px) { @content; }
+  } @else if $breakpoint == "lg" {
+    @media (min-width: 992px) and (max-width: 1199.98px) { @content; }
+  } @else if $breakpoint == "xl" {
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+// Gradient mixins
+@mixin gradient-primary {
+  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%);
+}
+
+@mixin gradient-secondary {
+  background: linear-gradient(135deg, $secondary-color 0%, darken($secondary-color, 10%) 100%);
+}
+
+// Text gradient
+@mixin text-gradient {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+// Transitions
+@mixin transition($property: all, $duration: 0.3s, $timing: ease-in-out) {
+  transition: $property $duration $timing;
+}
+
+// Shadows
+@mixin card-shadow {
+  box-shadow: 0 10px 30px rgba($dark-color, 0.1);
+}
+
+@mixin hover-shadow {
+  box-shadow: 0 15px 35px rgba($dark-color, 0.2);
+}
+
+// Button styles
+@mixin button-style {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  @include transition;
+}
+
+// Section title
+@mixin section-title {
+  position: relative;
+  margin-bottom: 3rem;
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: $font-weight-bold;
+    margin-bottom: 1rem;
+    
+    span {
+      color: $primary-color;
+    }
+  }
+  
+  p {
+    color: $gray-600;
+    font-size: 1.1rem;
+  }
+}
+

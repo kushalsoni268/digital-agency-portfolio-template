@@ -1,0 +1,86 @@
+// Colors
+$primary-color: #ff6b6b;
+$secondary-color: #4ecdc4;
+$dark-color: #1a1a2e;
+$light-color: #f7f7f7;
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Theme Colors - Light Mode (Default)
+$theme-bg: $white;
+$theme-text: $gray-800;
+$theme-card-bg: $white;
+$theme-section-bg: $gray-100;
+$theme-border: $gray-300;
+$theme-footer-bg: $dark-color;
+$theme-footer-text: rgba($white, 0.8);
+$theme-hero-bg: $dark-color;
+$theme-hero-text: $white;
+
+// Dark Mode Colors
+$dark-theme-bg: #121212;
+$dark-theme-text: #e0e0e0;
+$dark-theme-card-bg: #1e1e1e;
+$dark-theme-section-bg: #181818;
+$dark-theme-border: #333333;
+$dark-theme-footer-bg: #0a0a0a;
+$dark-theme-footer-text: rgba($white, 0.7);
+$dark-theme-hero-bg: #0a0a0a;
+$dark-theme-hero-text: $white;
+
+// Typography
+$font-family-base: 'Poppins', sans-serif;
+$font-family-heading: 'Montserrat', sans-serif;
+$font-size-base: 1rem;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+// Spacing
+$spacer: 1rem;
+$section-padding: 6rem 0;
+
+// Borders
+$border-radius: 0.25rem;
+$border-radius-lg: 0.5rem;
+$border-radius-sm: 0.2rem;
+
+// Shadows
+$box-shadow: 0 0.5rem 1rem rgba($dark-color, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($dark-color, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($dark-color, 0.175);
+
+// Transitions
+$transition-base: all 0.3s ease-in-out;
+$transition-fade: opacity 0.15s linear;
+
+// Z-index
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+
+// Bootstrap overrides
+$primary: $primary-color;
+$secondary: $secondary-color;
+$dark: $dark-color;
+$light: $light-color;
+
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-dark-color: rgba($white, 0.8);
+$navbar-dark-hover-color: $white;
+
